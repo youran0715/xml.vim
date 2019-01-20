@@ -1308,8 +1308,8 @@ en
 
 call s:unmapKeys()
 
-  call <SID>mapKey('n', 'str', ':call <SID>Change()<Cr>')
-  call <SID>mapKey('n', 'stR', ':call <SID>ChangeWholeTag()<Cr>')
+  call <SID>mapKey('n', 'str', "m':call <SID>findOpenTag('bW')<CR>:call <SID>Change()<Cr>")
+  call <SID>mapKey('n', 'stR', "m':call <SID>findOpenTag('bW')<CR>:call <SID>ChangeWholeTag()<Cr>")
   call <SID>mapKey('n', 'std', "m':call <SID>findOpenTag('bW')<CR>:call <SID>Delete()<Cr>")
   call <SID>mapKey('v', 'stA', '<Esc>:call <SID>BlockTag(0)<Cr>')
   call <SID>mapKey('v', 'sta', '<Esc>:call <SID>BlockTag(1)<Cr>')
