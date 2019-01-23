@@ -1308,11 +1308,11 @@ en
 
 call s:unmapKeys()
 
-  call <SID>mapKey('n', 'str', "m':call <SID>findOpenTag('bW')<CR>:call <SID>Change()<Cr>")
-  call <SID>mapKey('n', 'stR', "m':call <SID>findOpenTag('bW')<CR>:call <SID>ChangeWholeTag()<Cr>")
-  call <SID>mapKey('n', 'std', "m':call <SID>findOpenTag('bW')<CR>:call <SID>Delete()<Cr>")
-  call <SID>mapKey('v', 'stA', '<Esc>:call <SID>BlockTag(0)<Cr>')
-  call <SID>mapKey('v', 'sta', '<Esc>:call <SID>BlockTag(1)<Cr>')
+  call <SID>mapKey('n', 'ct', "m':call <SID>findOpenTag('bW')<CR>:call <SID>Change()<Cr>")
+  call <SID>mapKey('n', 'cT', "m':call <SID>findOpenTag('bW')<CR>:call <SID>ChangeWholeTag()<Cr>")
+  call <SID>mapKey('n', 'dt', "m':call <SID>findOpenTag('bW')<CR>:call <SID>Delete()<Cr>")
+  call <SID>mapKey('v', 'yT', '<Esc>:call <SID>BlockTag(0)<Cr>')
+  call <SID>mapKey('v', 'yt', '<Esc>:call <SID>BlockTag(1)<Cr>')
 
   " Mappings of keys to functions                                         {{{2
   call <SID>mapKey('n', '<LocalLeader>5', ':call <SID>Matches()<Cr>')
